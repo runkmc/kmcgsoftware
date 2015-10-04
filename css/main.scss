@@ -78,12 +78,12 @@ img.app-store {
 
   #filmstock-phone {
     background-color:#5C5B67;
-    padding:3em;
+    padding-top:4em;
     margin:0;
     @include span-columns(12);
     @media #{$width} {
       padding:0;
-      padding-top:2em;
+      padding-top:3em;
       @include span-columns(6);  
     }
   }

@@ -76,7 +76,7 @@ img.app-store {
       padding-top: 1em; }
   #filmstock #filmstock-phone {
     background-color: #5C5B67;
-    padding: 3em;
+    padding-top: 4em;
     margin: 0;
     float: left;
     display: block;
@@ -87,7 +87,7 @@ img.app-store {
     @media (min-width: 800px) {
       #filmstock #filmstock-phone {
         padding: 0;
-        padding-top: 2em;
+        padding-top: 3em;
         float: left;
         display: block;
         margin-right: 2.35765%;
