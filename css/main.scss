@@ -1,0 +1,99 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "fonts";
+
+$width: "(min-width:800px)";
+
+// fonts and colors
+
+body {
+  font-family:'cooper_hewittbook', sans-serif;
+  font-size:1.1em;
+  padding:0;
+  margin:0;
+  background-color:white;
+  @include outer-container;
+  @media #{$width} {
+    @include background-image(linear-gradient(left, white 0%, white 50%, #5C5B67 50%, #5C5B67 100%));
+  }
+}
+
+h1 {
+  font-family:'cooper_hewittmedium', sans-serif;
+  text-transform:uppercase;
+  display:block;
+  font-size:2em;
+}
+
+
+// images
+
+.icon {
+  width:8em;
+  display:block;
+  margin:0 auto;
+}
+
+img.iphone {
+  display:block;
+  width:20em;
+  margin:0 auto;
+}
+
+img.app-store {
+  display:block;
+  width:12em;
+  margin:0 auto;
+  padding-top:2em;
+}
+
+
+// filmstock
+
+
+#filmstock {
+  color:#5C5B67;
+  padding-top:2em;
+
+  h1 {
+    text-align:center;
+    letter-spacing:0.1em;
+  }
+
+  p {
+    text-align:justify;
+    width:20em;
+    line-height:1.45em;
+    margin:0 auto;
+    display:block;
+
+    &:first-child {
+      padding-top:2em;
+    }
+    &:last-child {
+      padding-bottom:2em;
+      padding-top:1em;
+    }
+  }
+
+  #filmstock-phone {
+    background-color:#5C5B67;
+    padding:3em;
+    margin:0;
+    @include span-columns(12);
+    @media #{$width} {
+      padding:0;
+      padding-top:2em;
+      @include span-columns(6);  
+    }
+  }
+
+  #filmstock-text {
+    @include span-columns(12);
+    @media #{$width} {
+      padding-top:7.5em;
+      @include span-columns(6);
+    }
+  }
+}
+
