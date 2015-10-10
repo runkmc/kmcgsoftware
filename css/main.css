@@ -55,7 +55,8 @@ img.app-store {
   display: block;
   width: 12em;
   margin: 0 auto;
-  padding-top: 2em; }
+  padding-top: 2em;
+  padding-bottom: 2em; }
 
 #filmstock {
   color: #5C5B67;
@@ -68,12 +69,13 @@ img.app-store {
     width: 20em;
     line-height: 1.45em;
     margin: 0 auto;
-    display: block; }
+    display: block;
+    padding-bottom: 2em; }
     #filmstock p:first-child {
-      padding-top: 2em; }
+      padding-top: 2em;
+      padding-bottom: 0; }
     #filmstock p:last-child {
-      padding-bottom: 2em;
-      padding-top: 1em; }
+      padding-bottom: 2em; }
   #filmstock #filmstock-phone {
     background-color: #5C5B67;
     padding-top: 4em;

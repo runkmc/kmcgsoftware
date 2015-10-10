@@ -45,6 +45,7 @@ img.app-store {
   width:12em;
   margin:0 auto;
   padding-top:2em;
+  padding-bottom:2em;
 }
 
 
@@ -66,13 +67,14 @@ img.app-store {
     line-height:1.45em;
     margin:0 auto;
     display:block;
+    padding-bottom:2em;
 
     &:first-child {
       padding-top:2em;
+      padding-bottom:0;
     }
     &:last-child {
       padding-bottom:2em;
-      padding-top:1em;
     }
   }
 
