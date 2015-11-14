@@ -44,7 +44,11 @@ h1 {
 .icon {
   width: 8em;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 2em; }
+  @media (min-width: 800px) {
+    .icon {
+      padding-top: 0em; } }
 
 img.iphone {
   display: block;
@@ -58,25 +62,44 @@ img.app-store {
   padding-top: 2em;
   padding-bottom: 2em; }
 
-#filmstock {
+.parent {
   color: #5C5B67;
-  padding-top: 2em; }
-  #filmstock h1 {
+  min-height: 100vh;
+  padding-bottom: 1em; }
+  @media (min-width: 800px) {
+    .parent {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center; } }
+  .parent h1 {
     text-align: center;
     letter-spacing: 0.1em; }
-  #filmstock p {
+  .parent p {
     text-align: justify;
-    width: 20em;
+    width: 21em;
     line-height: 1.45em;
     margin: 0 auto;
     display: block;
     padding-bottom: 2em; }
-    #filmstock p:first-child {
+    .parent p:first-child {
       padding-top: 2em;
       padding-bottom: 0; }
-    #filmstock p:last-child {
+    .parent p:last-child {
       padding-bottom: 2em; }
-  #filmstock #filmstock-phone {
+  .parent .phone {
     background-color: #5C5B67;
     padding-top: 4em;
     margin: 0;
@@ -84,33 +107,31 @@ img.app-store {
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-    #filmstock #filmstock-phone:last-child {
+    .parent .phone:last-child {
       margin-right: 0; }
     @media (min-width: 800px) {
-      #filmstock #filmstock-phone {
+      .parent .phone {
         padding: 0;
-        padding-top: 3em;
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%; }
-        #filmstock #filmstock-phone:last-child {
+        .parent .phone:last-child {
           margin-right: 0; } }
-  #filmstock #filmstock-text {
+  .parent .text {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-    #filmstock #filmstock-text:last-child {
+    .parent .text:last-child {
       margin-right: 0; }
     @media (min-width: 800px) {
-      #filmstock #filmstock-text {
-        padding-top: 7.5em;
+      .parent .text {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%; }
-        #filmstock #filmstock-text:last-child {
+        .parent .text:last-child {
           margin-right: 0; } }
 
 /*# sourceMappingURL=main.css.map */

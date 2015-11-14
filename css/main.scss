@@ -2,6 +2,7 @@
 @import "neat/neat";
 @import "fonts";
 
+
 $width: "(min-width:800px)";
 
 // fonts and colors
@@ -32,6 +33,10 @@ h1 {
   width:8em;
   display:block;
   margin:0 auto;
+  padding-top:2em;
+  @media #{$width} {
+    padding-top:0em;
+  }
 }
 
 img.iphone {
@@ -52,9 +57,14 @@ img.app-store {
 // filmstock
 
 
-#filmstock {
+.parent {
   color:#5C5B67;
-  padding-top:2em;
+  min-height:100vh;
+  padding-bottom:1em;
+  @media #{$width} {
+    @include display(flex);
+    @include align-items(center);
+  }
 
   h1 {
     text-align:center;
@@ -63,7 +73,7 @@ img.app-store {
 
   p {
     text-align:justify;
-    width:20em;
+    width:21em;
     line-height:1.45em;
     margin:0 auto;
     display:block;
@@ -78,22 +88,20 @@ img.app-store {
     }
   }
 
-  #filmstock-phone {
+  .phone {
     background-color:#5C5B67;
     padding-top:4em;
     margin:0;
     @include span-columns(12);
     @media #{$width} {
       padding:0;
-      padding-top:3em;
       @include span-columns(6);  
     }
   }
 
-  #filmstock-text {
+  .text {
     @include span-columns(12);
     @media #{$width} {
-      padding-top:7.5em;
       @include span-columns(6);
     }
   }
